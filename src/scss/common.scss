@@ -1,0 +1,50 @@
+// Заголовки, общие БЄМ блоки и проче...
+.button {
+  line-height: math.div(30, 20);
+  color: #ffffff;
+  font-weight: 600;
+  background-color: $blueColor;
+  @media (any-hover: hover) {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+//========================================================================================================================================================
+.controls-arrows {
+  display: grid;
+  top: -138px;
+  right: 0;
+  z-index: 10;
+  grid-template-columns: repeat(2, 62px);
+  column-gap: rem(25);
+  @include adaptiveValue("padding", 38, 10);
+  padding-right: 0;
+}
+.controls-arrow {
+  border-radius: 50%;
+  height: rem(62);
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  color: $blueColor;
+  @media (any-hover: hover) {
+    &:hover {
+      color: #ffffff;
+      background-color: $blueColor;
+    }
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+  // .controls-arrow_prev
+
+  &_prev {
+  }
+
+  // .controls-arrow_next
+
+  &_next {
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+}

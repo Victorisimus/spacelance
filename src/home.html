@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Главная" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <section class="page__looking looking">
+          <div class="looking__container">
+            <div class="looking__content">
+              <div class="looking__block-text block-text">
+                <h1 class="block-text__title">
+                  Are you looking for Freelancers?
+                </h1>
+                <div class="block-text__text">
+                  Hire Great Freelancers, Fast. Spacelance helps you hire elite
+                  freelancers at a moment's notice
+                </div>
+                <div class="looking__block-action">
+                  <a href="#" class="block-text__button button"
+                    >Hire a freelancer</a
+                  >
+                  <form action="#" class="search-header">
+                    <button
+                      type="submit"
+                      class="search-header__button"
+                    ></button>
+                    <input
+                      autocomplete="off"
+                      type="text"
+                      name="form[]"
+                      data-error="Ошибка"
+                      placeholder="search freelance work"
+                      class="search-header__input"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="looking__image">
+              <img
+                src="@img/main/working.png"
+                alt="Картинка рабочего процесса"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="page__steps steps">
+          <div class="steps__container">
+            <div class="steps__body">
+              <div class="steps__item">
+                <div class="steps__icon">
+                  <img src="@img/steps/01.png" alt="Иконка шага" />
+                </div>
+                <div class="steps__content">
+                  <div class="steps__title">Create Account</div>
+                  <div class="steps__text">
+                    First you have to create a account here
+                  </div>
+                </div>
+              </div>
+              <div class="steps__item">
+                <div class="steps__icon">
+                  <img src="@img/steps/02.png" alt="Иконка шага" />
+                </div>
+                <div class="steps__content">
+                  <div class="steps__title">Search work</div>
+                  <div class="steps__text">
+                    Search the best freelance work here
+                  </div>
+                </div>
+              </div>
+              <div class="steps__item">
+                <div class="steps__icon">
+                  <img src="@img/steps/03.png" alt="Иконка шага" />
+                </div>
+                <div class="steps__content">
+                  <div class="steps__title">Save and apply</div>
+                  <div class="steps__text">
+                    Apply or save and start your work
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__find find">
+          <div class="find__container">
+            <div class="find__image">
+              <img src="@img/find/girl.png" alt="Девушка" />
+              <div class="find__info find__info_top">
+                <div class="find__counter">500+</div>
+                <div class="find__name">freelancers</div>
+              </div>
+              <div class="find__info find__info_bottom">
+                <div class="find__counter">300+</div>
+                <div class="find__name">freelance work Posted</div>
+              </div>
+            </div>
+            <div class="find__content">
+              <h2 class="find__title">
+                Find The Best <span>Freelancers</span> Here
+              </h2>
+              <div class="find__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat
+                bibendum ornare urna, cursus eget convallis. Feugiat imperdiet
+                posuere justo, ultrices interdum sed orci nunc, mattis. Ipsum
+                viverra viverra neque adipiscing arcu, quam dictum. Dui mi
+                viverra dui, sit accumsan, tincidunt massa. Dui cras magnis.
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__works works">
+          <div class="works__container">
+            <div class="works__slider">
+              <div class="works__info-content">
+                <div class="works__content-title">
+                  <h3 class="works__subtitle">The latest freelance work!</h3>
+                  <h2 class="works__title">
+                    Recently Posted <span>Works</span>
+                  </h2>
+                </div>
+                <div class="works__controls controls-arrows">
+                  <button
+                    type="button"
+                    class="controls-arrow controls-arrow_prev _icon-arrow"
+                  ></button>
+                  <button
+                    type="button"
+                    class="controls-arrow controls-arrow_next _icon-arrow"
+                  ></button>
+                </div>
+              </div>
+              <div class="works__swiper">
+                <div class="works__slide slide-works">
+                  <div class="slide-works__body">
+                    <div class="slide-works__icon">
+                      <img src="@img/works/01.png" alt="Иконка вида работы" />
+                    </div>
+                    <div class="slide-works__text-block">
+                      <h3 class="slide-works__title">Logo Design</h3>
+                      <div class="slide-works__text">
+                        Need a professional logo with writing underneath for our
+                        jewellery company
+                      </div>
+                    </div>
+                    <div class="slide-works__bottom">
+                      <div class="slide-works__price">
+                        Highest&nbsp;bid $500
+                      </div>
+                      <a href="#" class="slide-works__link">Apply now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="works__slide slide-works">
+                  <div class="slide-works__body">
+                    <div class="slide-works__icon">
+                      <img src="@img/works/02.png" alt="Иконка вида работы" />
+                    </div>
+                    <div class="slide-works__text-block">
+                      <h3 class="slide-works__title">Graphic Design</h3>
+                      <div class="slide-works__text">
+                        We need a graphic designer with UI/UX skills for our
+                        Furniture company
+                      </div>
+                    </div>
+                    <div class="slide-works__bottom">
+                      <div class="slide-works__price">
+                        Highest&nbsp;bid $500
+                      </div>
+                      <a href="#" class="slide-works__link">Apply now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="works__slide slide-works">
+                  <div class="slide-works__body">
+                    <div class="slide-works__icon">
+                      <img src="@img/works/03.png" alt="Иконка вида работы" />
+                    </div>
+                    <div class="slide-works__text-block">
+                      <h3 class="slide-works__title">Need a SEO</h3>
+                      <div class="slide-works__text">
+                        Need a SEO for our company who will let our company to a
+                        higher level
+                      </div>
+                    </div>
+                    <div class="slide-works__bottom">
+                      <div class="slide-works__price">
+                        Highest&nbsp;bid $300
+                      </div>
+                      <a href="#" class="slide-works__link">Apply now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+  </body>
+</html>
